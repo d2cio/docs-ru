@@ -1,0 +1,72 @@
+site_name: D2C
+site_url: https://www.d2c.io
+site_description: Project documentation of D2C.io.
+site_author: D2C.io Team
+site_dir: site/ru
+
+repo_url: https://github.com/d2cio/docs/
+
+pages:
+- Вступление: index.md
+- Начало работы:
+  - 'Проекты': 'getting-started/projects.md'
+  - 'Сервера': 'getting-started/hosts.md'
+  - 'Облачные провайдеры': 'getting-started/cloud-providers.md'
+  - 'Сервисы': 'getting-started/services.md'
+  - 'Контейнеры': 'getting-started/containers.md'
+  - 'Создание сервисов': 'getting-started/creating-services.md'
+  - 'Стэки': 'getting-started/stacks.md'
+#  - 'Application services':
+#    - 'Node.js': 'getting-started/app-services/nodejs.md'
+#    - 'Python': 'getting-started/app-services/python.md'
+#    - 'Go': 'getting-started/app-services/golang.md'
+#    - 'Ruby': 'getting-started/app-services/ruby.md'
+#    - 'PHP-FPM': 'getting-started/app-services/php-fpm.md'
+#    - 'PHP-Apache': 'getting-started/app-services/php-apache.md'
+#  - 'Data services':
+#    - 'MongoDB': 'getting-started/data-services/mongodb.md'
+#    - 'MariaDB': 'getting-started/data-services/mariadb.md'
+#    - 'MySQL': 'getting-started/data-services/mysql.md'
+#    - 'Percona': 'getting-started/data-services/percona.md'
+#    - 'PostgreSQL': 'getting-started/data-services/postgresql.md'
+#    - 'Redis': 'getting-started/data-services/redis.md'
+#    - 'Crate': 'getting-started/data-services/crate.md'
+#    - 'Memcached': 'getting-started/data-services/memcached.md'
+#    - 'ElasticSearch': 'getting-started/data-services/elasticsearch.md'
+#  - 'Other services':
+#    - 'NGINX': 'getting-started/other-services/nginx.md'
+#    - 'NGINX-Static': 'getting-started/other-services/nginx-static.md'
+#    - 'NGINX-Cluster': 'getting-started/other-services/nginx-cluster.md'
+#    - 'HAProxy': 'getting-started/other-services/haproxy.md'
+#    - 'Docker': 'getting-started/other-services/docker-service.md'
+- Платформа:
+  - 'Разворачивание': 'platform/deployment.md'
+  - 'Приватная сеть': 'platform/private-network.md'
+  - 'Масштабирование': 'platform/scaling.md'
+  - 'Балансировка': 'platform/balancing.md'
+  - 'Логи': 'platform/logs.md'
+  - 'Метрики': 'platform/metrics.md'
+  - 'Клонирование': 'platform/cloning-apps.md'
+  - 'Миграция контейнеров': 'platform/migration.md'
+  - 'Домены и сертификаты': 'platform/domains-and-certificates.md'
+#  - 'Backups': 'platform/backups.md'
+- Аккаунт:
+  - 'Настройки': 'account/settings.md'
+  - 'Тарифы': 'account/plan.md'
+
+theme: readthedocs
+
+extra_javascript:
+  - 'scripts/extra.js'
+
+extra_css:
+  - 'css/extra.css'
+
+markdown_extensions:
+  - admonition
+  - smarty
+  - toc:
+      permalink: True
+
+
+copyright: Copyright&copy; 2017 <a href="https://d2c.io">D2C.io</a>&nbsp;&nbsp;&nbsp;<a href="/">English version</a>
