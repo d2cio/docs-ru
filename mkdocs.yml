@@ -2,7 +2,7 @@ site_name: D2C
 site_url: https://www.d2c.io
 site_description: Project documentation of D2C.io.
 site_author: D2C.io Team
-site_dir: site/ru
+site_dir: site
 
 repo_url: https://github.com/d2cio/docs/
 
@@ -16,6 +16,7 @@ pages:
   - 'Контейнеры': 'getting-started/containers.md'
   - 'Создание сервисов': 'getting-started/creating-services.md'
   - 'Стэки': 'getting-started/stacks.md'
+  - 'Готовые стэки': 'getting-started/stack-hub.md'
 #  - 'Application services':
 #    - 'Node.js': 'getting-started/app-services/nodejs.md'
 #    - 'Python': 'getting-started/app-services/python.md'

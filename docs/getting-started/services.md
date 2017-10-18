@@ -18,15 +18,15 @@ D2C запускает ваши сервисы/приложения внутри
 
 | Название          | Конфигурация               | Масштабируемый         | Поддерживаемые версии  |
 | :-----------  | :-------------              | :------------- | |
-| **MongoDB**       | StandAlone or ReplicaSet    | Да |              2.6, 3.0, 3.2, 3.4 |
-| **MySQL**         | StandAlone or MasterSlave   | Да |              5.5, 5.6, 5.7, 8.0 |
-| **MariaDB**       | StandAlone or MasterSlave   | Да |              5.5, 10.0, 10.1, 10.2, 10.3 |
-| **Percona**       | StandAlone or MasterSlave   | Да |              5.5, 5.6, 5.7 |
-| **PostgreSQL**    | StandAlone or MasterSlave   | Да |              9.3, 9.4, 9.5, 9.6 |
-| **Crate**         | StandAlone                  | Нет  |              0.57, 1.0 |
-| **Redis**         |                             | Да |              2.8, 3.0, 3.2 |
-| **Memcached**     |                             | Да |              1.4 |
-| **ElasticSearch** | StandAlone                  | Нет  |              1.x, 2.x, 5.x |
+| **MongoDB**       | StandAlone or ReplicaSet    | Да  |  2.6, 3.0, 3.2, 3.4 |
+| **MySQL**         | StandAlone or MasterSlave   | Да  |  5.5, 5.6, 5.7, 8.0 |
+| **MariaDB**       | StandAlone or MasterSlave   | Да  |  5.5, 10.0, 10.1, 10.2, 10.3 |
+| **Percona**       | StandAlone or MasterSlave   | Да  |  5.5, 5.6, 5.7 |
+| **PostgreSQL**    | StandAlone or MasterSlave   | Да  |  9.3, 9.4, 9.5, 9.6, 10.0 |
+| **Crate**         | StandAlone                  | Нет |  0.57, 1.0, 2.0, 2.1 |
+| **Redis**         |                             | Да  |  2.8, 3.0, 3.2, 4.0 |
+| **Memcached**     |                             | Да  |  1.4, 1.5 |
+| **ElasticSearch** | StandAlone                  | Нет |  1.x, 2.x, 5.x |
 
 ### Сервисы приложений
 
@@ -34,10 +34,10 @@ D2C запускает ваши сервисы/приложения внутри
 | :---------    | :-------------| :-------------      |
 | **Node.js**       | Да           | 0.12, 4, 6, 7, 8   |
 | **Python**        | Да           | 2.7, 3.3, 3.4, 3.5, 3.6 |
-| **Go**            | Да           | 1.6, 1.7, 1.8  |
+| **Go**            | Да           | 1.6, 1.7, 1.8, 1.9  |
 | **Ruby**          | Да           | 1.9, 2.0, 2.1, 2.2, 2.3, 2.4 |
-| **PHP-FPM**       | Да           | 5.6, 7.1 |
-| **APACHE+PHP**    | Да           | 5.6, 7.1 |
+| **PHP-FPM**       | Да           | 5.6, 7.0, 7.1 |
+| **APACHE+PHP**    | Да           | 5.6, 7.0, 7.1 |
 
 ### Другие сервисы
 

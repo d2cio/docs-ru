@@ -2,18 +2,7 @@
 
 Стэки это набор сервисов и серверов, которые требуются для запуска вашего приложения. Это очень простой способ разворачивания приложения в разных окружениях (разработка, тестирование, staging, production).
 
-Все сервисы и настройки сервисов, которые поддерживаются в D2C через интерфейс могут быть описаны в одном **Стэк** файле.
-
-
-<!-- ## Ready to deploy stacks
-
-| Stack name         | Link                       | Services                      | Minimal configuration |
-| :-------------     | :-------------             | :-------------                |:------------- |
-| MEAN               | [GitHub]()                 | MongoDB, Mongo-express (Node.js), Node.js, NGINX                                                    | 2 hosts, 4 containers  |  
-| Sentry             | [GitHub]()                 | Redis, PostgreSQL, Docker (web), Docker (Worker), Docker (Cron), NGINX                              | 1 host, 6 containers |
-| Scalable Wordpress | [GitHub]()                 | MySQL (MasterSlave), Redis, PHP-FPM, NGINX-Cluster, HAProxy, Varnish, PHPMyAdmin (PHP-FPM), NGINX   | 3 hosts, 11 containers |
-
-### How to deploy a stack file -->
+Все сервисы и настройки сервисов, которые поддерживаются в D2C через интерфейс, могут быть описаны в одном **Стэк** файле в формате YAML.
 
 ## Создание стэк файла
 
@@ -23,12 +12,14 @@
 
 | Шаблон       | Комментарии    |
 | :------------- | :------------- |
-| `{{=service('serviceName').get('fieldName')}}`        | Возвращает переменную сервиса |
-| `{{=service('serviceName').getMainPort()}}`           | Возвращает основной порт |
-| `{{=service(serviceName).getAppAlias()}}`             | Возвращает alias контейнера [сервиса приложений](/getting-started/services/#_5))      |
-| `{{=service('serviceName').getMasterAlias()}}`        | Возвращает alias мастер-контейнера (для [сервисов хранения данных](/getting-started/services/#data-services))      |
-| `{{=service(serviceName).getSlaveAlias()}}`           | Возвращает alias of слейв-контейнера (для [сервисов хранения](/getting-started/services/#_4))      |
-| `{{=service('serviceName').getContainerName(num)}}`   | Возвращает имя контейнера сервиса с номером `num`  |
+| `{{=service('serviceName').get('fieldName')}}`           | Возвращает переменную сервиса |
+| `{{=service('serviceName').getMainPort()}}`              | Возвращает основной порт |
+| `{{=service(serviceName).getAppAlias()}}`                | Возвращает alias контейнера [сервиса приложений](/getting-started/services/#_5)) и всех не реплицируемых сервисов (например, Redis или NGINX)    |
+| `{{=service('serviceName').getMasterAlias()}}`           | Возвращает alias мастер-контейнера (для [сервисов хранения данных](/getting-started/services/#data-services))      |
+| `{{=service(serviceName).getSlaveAlias()}}`              | Возвращает alias of слейв-контейнера (для [сервисов хранения](/getting-started/services/#_4))      |
+| `{{=service('serviceName').getContainerName(num)}}`      | Возвращает имя контейнера сервиса с номером `num`  |
+| `{{=service('serviceName').getEnv('environmentfield')}}` | Возвращает поле переменной сервиса |
+| `{{=randomString(num)}}`                                 | Генерирует случайную строку указанной длины  |
 
 !!! note
 
@@ -246,6 +237,7 @@ deployTo:
 | startCommand      | Нет  | [Команда запуска](//platform/deployment/#_4) приложения |
 | configFiles.dest  | Нет  | Имя (для стандартных конфигов) или путь к файлу конфига в контейнере (для [пользовательских конфигов](/getting-started/creating-services/#_12)) |
 | configFiles.src   | Нет  | Путь к файлу конфига в вашей директории стэка |
+| volumesUID        | Нет  | Идентификатор пользователя директории постоянного хранилища |
 | deployTo          | Да   | Имена серверов на которых нужно развернуть сервисы |
 
 ### Example
