@@ -12,12 +12,12 @@
 
 ## Стэки
 
-| Название стэка     |  Сервисы  | Конфигурация | Исходники и ссылка на разворачивание |
+| Название стэка     |  Сервисы  | Конфигурация | Ссылки на GitHub<br>и разворачивание &nbsp; |
 | :-------------     | :-------------  | :-------------  |:------------- |
 | MEAN light | MongoDB, Mongo-express (Node.js), Node.js, NGINX    | 1 сервер, 4 контейнера  | [GitHub](https://github.com/d2cio/mean-light-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/mean-light-stack/archive/master.zip)
 | MEAN  | MongoDB, Mongo-express (Node.js), Node.js, NGINX    | 2 сервера, 4 контейнера  | [GitHub](https://github.com/d2cio/mean-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/mean-stack/archive/master.zip)
 | WordPress | MariaDB (MasterSlave), Redis, PHP-FPM, NGINX-Cluster, HAProxy, Varnish, PHPMyAdmin (PHP-FPM), NGINX   |  3 сервера, 11 контейнера |  [GitHub](https://github.com/d2cio/wordpress-scalable-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/wordpress-scalable-stack/archive/master.zip)
-| WordPress light | Percona (StandAlone), PHP-FPM, NGINX-Cluster, Varnish, PHPMyAdmin (PHP-FPM), NGINX   |  1 сервер, 6 containers |  [GitHub](https://github.com/d2cio/wordpress-scalable-light-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/wordpress-scalable-light-stack/archive/master.zip)
+| WordPress light | Percona (StandAlone), PHP-FPM, NGINX-Cluster, Varnish, PHPMyAdmin (PHP-FPM), NGINX   |  1 сервер, 6 контейнера |  [GitHub](https://github.com/d2cio/wordpress-scalable-light-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/wordpress-scalable-light-stack/archive/master.zip)
 | Sentry     | Redis, PostgreSQL, Docker (web), Docker (Worker), Docker (Cron), NGINX | 1 сервер, 6 контейнера | [GitHub](https://github.com/d2cio/sentry-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/sentry-stack/archive/master.zip)
 | Odoo     | PostgreSQL, Docker, NGINX  |  1 сервер, 3 контейнера | [GitHub](https://github.com/d2cio/odoo-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/odoo-stack/archive/master.zip)
 | Redmine     | PostgreSQL, Docker, NGINX  |  1 сервер, 3 контейнера | [GitHub](https://github.com/d2cio/redmine-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/redmine-stack/archive/master.zip)
@@ -28,3 +28,6 @@
 | MariaDB   | MariaDB, PHPMyAdmin (PHP-FPM), NGINX  |  1 сервер, 3 контейнера | [GitHub](https://github.com/d2cio/mariadb-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/mariadb-stack/archive/master.zip)
 | Percona   | Percona, PHPMyAdmin (PHP-FPM), NGINX  |  1 сервер, 3 контейнера | [GitHub](https://github.com/d2cio/percona-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/percona-stack/archive/master.zip)
 | MySQL   | MySQL, PHPMyAdmin (PHP-FPM), NGINX  |  1 сервер, 3 контейнера | [GitHub](https://github.com/d2cio/mysql-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/mysql-stack/archive/master.zip)
+| Adminer   | PHP+Apache  |  1 сервер, 1 контейнер | [GitHub](https://github.com/d2cio/adminer-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/adminer-stack/archive/master.zip)
+| Adminer+NGINX   | PHP-FPM, NGINX  |  1 сервер, 2 контейнера | [GitHub](https://github.com/d2cio/adminer-nginx-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/adminer-nginx-stack/archive/master.zip)
+| pgAdmin4  | Python  | 1 сервер, 1 контейнер  | [GitHub](https://github.com/d2cio/pgAdmin-stack) \| [Развернуть](https://panel.d2c.io/?import=https://github.com/d2cio/pgAdmin-stack/archive/master.zip) |
