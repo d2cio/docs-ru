@@ -72,6 +72,30 @@
 
 ![Hosts](../img/host_logs.png)
 
+## Подключение через SSH и SFTP
+
+!!! note
+
+    Один публичный ключ должен использоваться только один раз вне зависимости от его типа (SSH or SFTP). Если вам требуется изменить метод подключения, необходимо создать дополнительный публичный ключ или заменить добавленный.
+
+Откройте терминал сервера и выполните следующие команды используя свои ключи.
+
+[Как создать SSH ключи (инструкция BitBucket)](https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html)
+
+### Через SSH
+
+```bash
+SSH_KEY="your public key"
+echo $SSH_KEY >> ~/.ssh/authorized_keys
+```
+
+### Через SFTP
+
+```bash
+SSH_KEY="your public key"
+echo "restrict,command=\"sudo /usr/lib/openssh/sftp-server -d /ebs/containers\" $SSH_KEY" >> ~/.ssh/authorized_keys
+```
+
 ### Как выглядит страница сервера
 
 ![Hosts](../img/host_page.png)

@@ -19,6 +19,8 @@
 | `{{=service(serviceName).getSlaveAlias()}}`              | Возвращает alias of слейв-контейнера (для [сервисов хранения](/getting-started/services/#_4))      |
 | `{{=service('serviceName').getContainerName(num)}}`      | Возвращает имя контейнера сервиса с номером `num`  |
 | `{{=service('serviceName').getEnv('environmentfield')}}` | Возвращает поле переменной сервиса |
+| `{{=service('serviceName').getNginxDomain()}}`           | Возвращает стандартный домен, который планируется использовать в NGINX |
+| `{{=service('serviceName').getBalancerDomain()}}`        | Возвращает стандартный домен, который планируется использовать в HAProxy |
 | `{{=randomString(num)}}`                                 | Генерирует случайную строку указанной длины  |
 
 !!! note
