@@ -90,9 +90,9 @@ deployTo:
 | name              | Да   | Имя должно быть уникальным внутри всего аккаунта. Если имя уже используется - оно будет заменено автоматически сгенерируемым |
 | type              | Да   | Сервис, который вы хотите развернуть |
 | version           | Да   | Вы можете указать любую из [поддерживаемых версий](/getting-started/services/#_5) |
-| source.type       | Да   | Варианты: git, download(url)  |
-| source.git        | Да   | Если вы используете приватный репозиторий, вы должны добавить SSH ключ в ваш аккаунт (инструкции  к [GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) и  [BitBucket](https://confluence.atlassian.com/bitbucket/add-an-ssh-key-to-an-account-302811853.html) )  |
+| source.type       | Да   | Варианты: `git`, `download`<br>Если вы используете приватный репозиторий, вы должны добавить SSH ключ в ваш аккаунт (инструкции  к [GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) и  [BitBucket](https://confluence.atlassian.com/bitbucket/add-an-ssh-key-to-an-account-302811853.html) )  |
 | source.url        | Да   | Протоколы: http, https, ftp. <br> Форматы файлов: .tar.bz2, .tar.gz, .tar, .zip <br> Пример: https://wordpress.org/latest.tar.gz  |
+| source.version    | Нет  | Только для git. По умолчанию - `master`. Может использоваться для указания ветки, номера коммита, тэга.  |
 | extensions        | Нет  | Дополнительные модули для сервисов PHP-FPM и PHP-Apache  |
 | pecl              | Нет  | Дополнительные модули для сервисов PHP-FPM и PHP-Apache |
 | ports             | Да   | Порты сервиса<br>Примеры: 8080 - порт 8080 (TCP), 7709\udp - порт 7709 (UDP)   |
@@ -226,9 +226,9 @@ deployTo:
 | type              | Да   | Сервис, который вы хотите развернуть |
 | image             | Да   | Docker образ приложения из [DockerHub](https://hub.docker.com/).<br>Примеры: openjdk, million12/varnish, quay.io/letsencrypt/dnsmasq |
 | version           | Да   | Версия приложения |
-| source.type       | Да   | Варианты: git, download(url)  |
-| source.git        | Да   | Если вы используете приватный репозиторий, вы должны добавить SSH ключ в ваш аккаунт (инструкции  к [GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) и  [BitBucket](https://confluence.atlassian.com/bitbucket/add-an-ssh-key-to-an-account-302811853.html) )  |
+| source.type       | Да   | Варианты: `git`, `download`<br>Если вы используете приватный репозиторий, вы должны добавить SSH ключ в ваш аккаунт (инструкции  к [GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) и  [BitBucket](https://confluence.atlassian.com/bitbucket/add-an-ssh-key-to-an-account-302811853.html) )  |
 | source.url        | Да   | Протоколы: http, https, ftp. <br> Форматы файлов: .tar.bz2, .tar.gz, .tar, .zip <br> Пример: https://wordpress.org/latest.tar.gz  |
+| source.version    | Нет  | Только для git. По умолчанию - `master`. Может использоваться для указания ветки, номера коммита, тэга.  |
 | ports             | Да   | Порты сервиса<br>Примеры: 8080 - порт 8080 (TCP), 7709\udp - порт 7709 (UDP)   |
 | remoteAccess      | Нет  | Все сервисы внутри проекта видны друг для друга изнутри. Если вы хотите, чтобы сервис был доступ из Интернета - используйте `true` |
 | env               | Нет  | Переменные окружения для вашего приложения. [Примеры](/getting-started/stacks/#_5)  |
