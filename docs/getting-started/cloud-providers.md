@@ -98,5 +98,5 @@
 
 1. Войдите в аккаунт Vultr, раздел [API](https://my.vultr.com/settings/#settingsapi)
 2. Нажмите **Enable API** и скопируйте API key
-3. Добавьте 52.58.244.78/32 IP в разделе Access Control
+3. Добавьте 52.58.244.78/32 и 52.57.161.208/32 IP в разделе Access Control
 4. Далее следуйте инструкции **Быстрый старт с Vultr**
