@@ -31,10 +31,10 @@
 4. Подключитесь к вашему серверу через **SSH**
 5. Вставьте и запустите команду, которую скопировали до этого
 
-## Поддерживаемые облачные провайдеры
+## Поддерживаемые хостинг провайдеры
 
 - Amazon Web Services ([инструкция по подключению AWS](/getting-started/cloud-providers/#amazon-web-services))
-- Digital Ocean ([инструкция по подключению DigitalOcean](/getting-started/cloud-providers/#digital-ocean))
+- DigitalOcean ([инструкция по подключению DigitalOcean](/getting-started/cloud-providers/#digital-ocean))
 - Vultr ([инструкция по подключению Vultr](/getting-started/cloud-providers/#vultr))
 
 Скоро будут доступны:
