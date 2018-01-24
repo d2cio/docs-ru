@@ -84,7 +84,7 @@ If you do not have AWS credentials, you can create one with the AWS Management c
 
 If you do not have Digital Ocean Spaces credentials, you can create it with the Digital Ocean account
 
-1. Open the [Digital Ocean Spaces](https://cloud.digitalocean.com/spaces) page
+1. Open the [DigitalOcean Spaces](https://cloud.digitalocean.com/spaces) page
 2. Click **Manage Keys** and then **Generate New Key**
 3. Give the key a name and apply it. Copy your Key and Secret
 4. Then follow the Digital Ocean Spaces QuickStart integration

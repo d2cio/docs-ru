@@ -35,10 +35,10 @@
 
 - Amazon Web Services ([инструкция по подключению AWS](/getting-started/cloud-providers/#amazon-web-services))
 - Digital Ocean ([инструкция по подключению DigitalOcean](/getting-started/cloud-providers/#digital-ocean))
+- Vultr ([инструкция по подключению Vultr](/getting-started/cloud-providers/#vultr))
 
 Скоро будут доступны:
 
-- Vultr
 - Microsoft Azure
 
 ## ПО, которое устанавливается на сервер

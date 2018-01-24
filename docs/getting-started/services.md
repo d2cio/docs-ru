@@ -18,12 +18,12 @@ D2C запускает ваши сервисы/приложения внутри
 
 | Название          | Конфигурация               | Масштабируемый         | Поддерживаемые версии  |
 | :-----------  | :-------------              | :------------- | |
-| **MongoDB**       | StandAlone or ReplicaSet    | Да  |  2.6, 3.0, 3.2, 3.4 |
+| **MongoDB**       | StandAlone or ReplicaSet    | Да  |  2.6, 3.0, 3.2, 3.4, 3.6 |
 | **MySQL**         | StandAlone or MasterSlave   | Да  |  5.5, 5.6, 5.7, 8.0 |
 | **MariaDB**       | StandAlone or MasterSlave   | Да  |  5.5, 10.0, 10.1, 10.2, 10.3 |
 | **Percona**       | StandAlone or MasterSlave   | Да  |  5.5, 5.6, 5.7 |
-| **PostgreSQL**    | StandAlone or MasterSlave   | Да  |  9.3, 9.4, 9.5, 9.6, 10.0 |
-| **Crate**         | StandAlone                  | Нет |  0.57, 1.0, 2.0, 2.1 |
+| **PostgreSQL**    | StandAlone or MasterSlave   | Да  |  9.3, 9.4, 9.5, 9.6, 10.0, 10.1 |
+| **Crate**         | StandAlone                  | Нет |  0.57, 1.0, 2.0, 2.1, 2.2 |
 | **Redis**         |                             | Да  |  2.8, 3.0, 3.2, 4.0 |
 | **Memcached**     |                             | Да  |  1.4, 1.5 |
 | **ElasticSearch** | StandAlone                  | Нет |  1.x, 2.x, 5.x |
@@ -32,10 +32,10 @@ D2C запускает ваши сервисы/приложения внутри
 
 | Название          | Масштабируемый      | Поддерживаемые версии |
 | :---------    | :-------------| :-------------      |
-| **Node.js**       | Да           | 0.12, 4, 6, 7, 8   |
+| **Node.js**       | Да           | 4, 6, 8, latest(9) |
 | **Python**        | Да           | 2.7, 3.3, 3.4, 3.5, 3.6 |
 | **Go**            | Да           | 1.6, 1.7, 1.8, 1.9  |
-| **Ruby**          | Да           | 1.9, 2.0, 2.1, 2.2, 2.3, 2.4 |
+| **Ruby**          | Да           | 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5 |
 | **PHP-FPM**       | Да           | 5.6, 7.0, 7.1, 7.2 |
 | **APACHE+PHP**    | Да           | 5.6, 7.0, 7.1, 7.2 |
 
@@ -46,7 +46,7 @@ D2C запускает ваши сервисы/приложения внутри
 | **NGINX**                                    | Нет          | 1.9, 1.10, 1.11, 1.12, 1.13 | NGINX is an edge service for serving on top of stack. It can generate free [TSL certificates](/platform/domains-and-certificates/) (by Let's Encrypt).
 | **NGINX-Cluster**                            | Да           | 1.9, 1.10, 1.11, 1.12, 1.13 |  NGINX-Cluster for cases when your application does not return static files or you need to serve more than one PHP-FPM container.
 | **NGINX-Static**                             | Да           | 1.9, 1.10, 1.11, 1.12, 1.13 | NGINX-Static returns static files (HTML, JS, CSS, images, etc.).  It cannot serve other services.
-| **HAProxy**                                  | Нет          | 1.8 |
+| **HAProxy**                                  | Нет          | latest |
 | **Docker** (Services based on Docker Images) | Да           |     |
 
 ## Действия

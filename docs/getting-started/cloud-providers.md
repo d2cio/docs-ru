@@ -5,7 +5,7 @@
 ## Поддерживаемые облачные провайдеры
 
 - **Amazon Web Services**
-- **Digital Ocean**
+- **DigitalOcean**
 - **Vultr**
 
 Скоро будут доступны:
@@ -61,23 +61,14 @@
 6. Кликните **Create policy**
 7. Теперь вы можете [сгенерировать ключи доступа AWS](/getting-started/cloud-providers/#generate-aws-credentials) с вашей собственной policy
 
-## Digital Ocean
+## DigitalOcean
 
-### Быстрый старт с Digital Ocean
+### Быстрый старт с DigitalOcean
 
 1. Войдите в ваш [D2C аккаунт](https://panel.d2c.io/account/login)
 2. Кликните **+ Создать сервер**
-3. Нажмите **Добавить провайдера** и выберите **Digital Ocean**
-4. Вставьте ваш Digital Ocean токен
-
-### Авторизовать D2C в Digital Ocean (создать новый токен)
-
-Если у вас нет токена Digital Ocean, вы можете создать его в аккаунте Digital Ocean
-
-1. Войдите в аккаунт Digital Ocean, раздел [API](https://cloud.digitalocean.com/settings/api/tokens)
-2. Нажмите **Generate New Token**
-3. Назовите токен и нажмите **Generate Token**. Скопируйте его
-4. Далее следуйте инструкции **Быстрый старт с Digital Ocean**
+3. Нажмите **Добавить провайдера** и выберите **DigitalOcean**
+4. Нажмите кнопку **Подключить** и авторизуйтесь в аккаунте **DigitalOcean**
 
 ## Vultr
 
