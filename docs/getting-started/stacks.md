@@ -218,18 +218,16 @@ deployTo:
 ```yaml
 name: balancer
 type: haproxy
-version: 1.7
+version: latest
 ports:
   - 80
   - 443
-remoteAccess: false
+remoteAccess: true
 serviceFiles:
   - name: cluster
     src: ./configs/cluster.conf
-    domains:
-      - example.com
-      - www.example.com
     https: letsencrypt
+    domains: [example.com, www.example.com]
 deployTo:
   - edge
 ```
