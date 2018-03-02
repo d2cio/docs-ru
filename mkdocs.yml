@@ -16,7 +16,7 @@ pages:
   - 'Сервисы': 'getting-started/services.md'
   - 'Контейнеры': 'getting-started/containers.md'
   - 'Создание сервисов': 'getting-started/creating-services.md'
-  - 'Стэки': 'getting-started/stacks.md'
+  - 'Создание стэков': 'getting-started/stacks.md'
   - 'Готовые стэки': 'getting-started/stack-hub.md'
 #  - 'Application services':
 #    - 'Node.js': 'getting-started/app-services/nodejs.md'
