@@ -105,6 +105,17 @@ SSH_KEY="your public key"
 echo "restrict,command=\"sudo /usr/lib/openssh/sftp-server -d /ebs/containers\" $SSH_KEY" >> ~/.ssh/authorized_keys
 ```
 
+## Данные сервисов
+
+Все данные сервисов находятся в директории:
+`/ebs/containers/serviceName`
+
+Например, исходники вы можете найти в:
+`/ebs/containers/serviceName/sources`
+
+Бэкапы:
+`/ebs/containers/serviceName/backup`
+
 ### Как выглядит страница сервера
 
 ![Hosts](../img/host_page.png)

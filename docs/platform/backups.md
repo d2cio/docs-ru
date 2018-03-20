@@ -48,6 +48,14 @@ Backup is a process of copying and archiving data so it may be used to restore t
 
 Each backup task logged and you can check it by clicking on **Log** icon.
 
+## Удаление старых бэкапов с севера
+
+Самый простой способ - добавить следующую [крон задачу](/platform/cron/):<br>
+
+`ls -td /d2c/backup/* | tail -n +2 | xargs rm -- && echo "OK" || echo "FAIL"`
+
+Будут удаляться все бэкапы, кроме последнего.
+
 ### Screenshots
 
 ![Backups](../img/backup.png)
