@@ -8,6 +8,7 @@ repo_url: https://github.com/d2cio/docs/
 
 pages:
 - Вступление: index.md
+- Быстрый тур: 'quick-tour/introduction.md'
 - Начало работы:
   - 'Проекты': 'getting-started/projects.md'
   - 'Сервера': 'getting-started/hosts.md'
