@@ -8,7 +8,7 @@ repo_url: https://github.com/d2cio/docs/
 
 pages:
 - Вступление: index.md
-- Быстрый тур: 'quick-tour/introduction.md'
+- Тур по сервису: 'quick-tour/introduction.md'
 - Начало работы:
   - 'Проекты': 'getting-started/projects.md'
   - 'Сервера': 'getting-started/hosts.md'
@@ -19,6 +19,7 @@ pages:
   - 'Создание сервисов': 'getting-started/creating-services.md'
   - 'Создание стэков': 'getting-started/stacks.md'
   - 'Готовые стэки': 'getting-started/stack-hub.md'
+  - 'Импорт базы данных': 'getting-started/database-import.md'
 #  - 'Application services':
 #    - 'Node.js': 'getting-started/app-services/nodejs.md'
 #    - 'Python': 'getting-started/app-services/python.md'

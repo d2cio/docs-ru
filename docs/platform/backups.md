@@ -1,8 +1,8 @@
 # Introduction
 
-Backup is a process of copying and archiving data so it may be used to restore the original after a data loss event. You can create and manage it at Cron tasks block at the service page.
+Бэкап (резервное копирование) это процесс создания и архивирования копии данных, предназначенных для восстановления. Создать и управлять бэкапами можно на странице сервисов.
 
-## Supported services
+## Поддерживаемые сервисы
 
 1. MySQL
 2. Percona
@@ -10,7 +10,7 @@ Backup is a process of copying and archiving data so it may be used to restore t
 4. PostgreSQL
 5. MongoDB
 
-## Storage providers
+## Бэкап провайдеры
 
 1. Amazon S3
 2. Backblaze
@@ -21,32 +21,32 @@ Backup is a process of copying and archiving data so it may be used to restore t
 7. FTP
 8. SFTP
 
-## How to create a backup
+## Как создать бэкап
 
-1. Open a service page
-2. Click **+Add backup** at Cron tasks block
-3. Enter a name for a new task
-4. Choose a container
-5. Specify time using time of a host (UTC in most of the times)
-6. Choose a storage provider ([How to add a storage provider](/getting-started/storage-providers/))
+1. Откройте страницу сервиса
+2. Нажмите **+Добавить бэкап** в блоке Cron задач
+3. Укажите имя задачи
+4. Выберите контейнер
+5. Укажите время, используя время сервера (в большинстве случаев используется UTC)
+6. Выберите бэкап провайдера ([Как добавить бэкап провайдера](/getting-started/storage-providers/))
 7. Click **Save**
 
-## How to restore from a backup
+## Как восстановить данные из бэкапа
 
 !!! note
 
-    We do not guarantee correct restoring from backups made with third party software
+    Мы не гарантируем корректное восстановление из бэкапов, созданных с использованием сторонних сервисов
 
-1. Open a service page
-2. Click **Restore**
-3. Choose a storage provider
-4. Ensure that the path to the backup is correct. Edit it if necessary
-5. Paste the name of the recovery file you want to restore from
-6. Click **Restore data**
+1. Откройте страницу сервиса
+2. Нажмите **Восстановить**
+3. Выберите бэкап провайдера
+4. Убедитесь, что путь к файлу корректный. Отредактируйте при необходимости
+5. Вставьте имя файла из которого требуется восстановить данные
+6. Нажмите **Восстановить данные**
 
-## Logs
+## Логи
 
-Each backup task logged and you can check it by clicking on **Log** icon.
+Каждая бэкап задача логгируется. Для просмотра логов - нажмите на иконку **Лог**.
 
 ## Удаление старых бэкапов с севера
 
@@ -56,7 +56,7 @@ Each backup task logged and you can check it by clicking on **Log** icon.
 
 Будут удаляться все бэкапы, кроме последнего.
 
-### Screenshots
+### Скриншоты
 
 ![Backups](../img/backup.png)
 
