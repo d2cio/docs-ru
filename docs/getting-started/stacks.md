@@ -10,9 +10,8 @@
 
 !!! note
 
-```
-Стэк файл должен называться **stackFile.yml**
-```
+    Стэк файл должен называться **stackFile.yml**. Блоки `services` и `hosts` являются обязательными ([пример stackFile](https://github.com/d2cio/cachethq-stack/blob/master/stackFile.yml)).
+
 
 Для сопоставления переменных из других сервисов вы можете использовать следующие шаблоны:
 
