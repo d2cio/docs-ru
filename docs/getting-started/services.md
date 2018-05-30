@@ -22,7 +22,7 @@ D2C запускает ваши сервисы/приложения внутри
 **MySQL**         | StandAlone или MasterSlave | Да             | 5.5, 5.6, 5.7, 8.0
 **MariaDB**       | StandAlone или MasterSlave | Да             | 5.5, 10.0, 10.1, 10.2, 10.3
 **Percona**       | StandAlone или MasterSlave | Да             | 5.5, 5.6, 5.7
-**PostgreSQL**    | StandAlone или MasterSlave | Да             | 9.6, 10.0, 10.1, 10.2
+**PostgreSQL**    | StandAlone или MasterSlave | Да             | 9.6, 10.0, 10.1, 10.2, 10.3, 10,4
 **Crate**         | StandAlone                 | Нет            | 2.0, 2.1, 2.2, 2.3
 **Redis**         |                            | Да             | 2.8, 3.0, 3.2, 4.0
 **Memcached**     |                            | Да             | 1.4, 1.5
@@ -55,7 +55,7 @@ D2C запускает ваши сервисы/приложения внутри
 
 - Обновить
 - Перезапустить
-- Остановить (Запустить)
+- Остановить/Запустить
 - Переместить (между проектами)
 - [Клонировать](/platform/cloning-apps/)
 - Удалить (+удалить с форсом)
@@ -65,6 +65,10 @@ D2C запускает ваши сервисы/приложения внутри
 - Выполнить - выполнение команду внутри запущенного контейнера сервиса
 
 ![Standard service actions](../img/standart_actions.png)
+
+Для баз данных MongoDB, MySQL, MariaDB, Percona, PostgreSQL
+
+- Сменить пароль пользователя superuser
 
 У всех [**сервисов приложений**](/getting-started/services/#_5) есть возможность гибкого обновления:
 
