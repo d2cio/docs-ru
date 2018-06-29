@@ -46,6 +46,8 @@ pages:
 - Платформа:
   - 'Разворачивание': 'platform/deployment.md'
   - 'Приватная сеть': 'platform/private-network.md'
+  - 'Домены и сертификаты': 'platform/domains-and-certificates.md'
+  - 'Доступ по SSH и SFTP': 'platform/ssh-sftp.md'
   - 'Масштабирование': 'platform/scaling.md'
   - 'Балансировка': 'platform/balancing.md'
   - 'Бэкапы': 'platform/backups.md'
@@ -55,7 +57,6 @@ pages:
   - 'Метрики': 'platform/metrics.md'
   - 'Клонирование': 'platform/cloning-apps.md'
   - 'Миграция контейнеров': 'platform/migration.md'
-  - 'Домены и сертификаты': 'platform/domains-and-certificates.md'
 - Аккаунт:
   - 'Настройки': 'account/settings.md'
   - 'Тарифы': 'account/plan.md'

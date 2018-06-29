@@ -13,11 +13,12 @@
 Когда вы **подключаете** свой сервер он должен соответствовать следующим требованиям:
 
 - Ubuntu 14.04/16.04 или Debian 8/9
-- Версия ядра >= 4.0 для лучшей производительности Docker используя OverlayFS, в противном случае,  в качестве драйвера хранилища будет ["devicemapper"](https://docs.docker.com/engine/userguide/storagedriver/selectadriver/)
+- Версия ядра >= 4.2
 - Свободное место на диске: 5 Gb
 - Открытый SSH порт
 - Для работы с сетью Weave, требуется открыть порты 6783, 6784 (TCP/UDP)
 - hostname должно быть уникально и не может называться "localhost"
+- Для наилучшей производительности рекомендуется убедиться, что туннелинг пакетов с пощощью VXLAN разрешен
 
 !!! note
 
@@ -83,27 +84,11 @@
 
 ## Подключение через SSH и SFTP
 
+[Отдельная статья по подключению через SSH и SFTP](/platform/ssh-sftp/).
+
 !!! note
 
     Один публичный ключ должен использоваться только один раз вне зависимости от его типа (SSH or SFTP). Если вам требуется изменить метод подключения, необходимо создать дополнительный публичный ключ или заменить добавленный.
-
-Откройте терминал сервера и выполните следующие команды используя свои ключи.
-
-[Как создать SSH ключи (инструкция BitBucket)](https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html)
-
-### Через SSH
-
-```bash
-SSH_KEY="your public key"
-echo $SSH_KEY >> ~/.ssh/authorized_keys
-```
-
-### Через SFTP
-
-```bash
-SSH_KEY="your public key"
-echo "restrict,command=\"sudo /usr/lib/openssh/sftp-server -d /ebs/containers\" $SSH_KEY" >> ~/.ssh/authorized_keys
-```
 
 ## Данные сервисов
 
