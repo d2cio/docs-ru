@@ -18,6 +18,10 @@ Update service version     | Обновление глобальных зави�
 
 Webhook ключ содержит и генерируется автоматически. Вы можете сгенерировать новый, но старый после этого работать не будет.
 
+## Как это работает
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/9FOkUe9y5lU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ### Скриншоты
 
 ![Webhooks](../img/webhooks.png)
