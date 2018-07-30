@@ -11,13 +11,13 @@
 Для создания бэкапа **всех баз данных** подключитесь к серверу, где расположена база данных и выполните следующую команду:
 
 ```bash
-mysqldump --skip-lock-tables --ignore-table mysql.innodb_index_stats --ignore-table mysql.innodb_table_stats --hex-blob --all-databases | gzip > backup.gz
+mysqldump --skip-lock-tables --ignore-table mysql.innodb_index_stats --ignore-table mysql.innodb_table_stats --hex-blob -p --all-databases | gzip > backup.gz
 ```
 
 Для создания бэкапа конкретных баз данных (в примере db1, db2, db3):
 
 ```bash
-mysqldump --skip-lock-tables --hex-blob --databases db1 db2 db3 | gzip > backup.gz
+mysqldump --skip-lock-tables --hex-blob -p --databases db1 db2 db3 | gzip > backup.gz
 ```
 
 ### MongoDB
