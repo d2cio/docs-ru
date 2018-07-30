@@ -41,7 +41,8 @@
 
 Скоро будут доступны:
 
-- Google cloud platform
+- UpCloud
+- Google Cloud Platform
 
 ## ПО, которое устанавливается на сервер
 

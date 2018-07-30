@@ -10,7 +10,8 @@
 
 Скоро будут доступны:
 
-- Microsoft Azure
+- UpCloud
+- Google Cloud Platform
 
 ## Amazon Web Services
 
