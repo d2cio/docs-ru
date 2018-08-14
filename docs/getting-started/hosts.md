@@ -38,10 +38,10 @@
 - Amazon Web Services ([инструкция по подключению AWS](/getting-started/cloud-providers/#amazon-web-services))
 - DigitalOcean ([инструкция по подключению DigitalOcean](/getting-started/cloud-providers/#digital-ocean))
 - Vultr ([инструкция по подключению Vultr](/getting-started/cloud-providers/#vultr))
+- UpCloud ([инструкция по подключению UpCloud](/getting-started/cloud-providers/#upcloud))
 
 Скоро будут доступны:
 
-- UpCloud
 - Google Cloud Platform
 
 ## ПО, которое устанавливается на сервер

@@ -92,3 +92,21 @@
 2. Нажмите **Enable API** и скопируйте API key
 3. Добавьте 52.58.244.78/32 и 52.57.161.208/32 IP в разделе Access Control
 4. Далее следуйте инструкции **Быстрый старт с Vultr**
+
+## UpCloud
+
+### Быстрый старт с UpCloud
+
+1. Войдите в ваш [D2C аккаунт](https://panel.d2c.io/account/login)
+2. Кликните **+ Создать сервер**
+3. Нажмите **Добавить провайдера** и выберите **UpCloud**
+4. Вставьте ваш API username и API password
+
+### Создание API пользователя
+
+1. Войдите в UpCloud аккаунт, раздел [User Accounts](https://my.upcloud.com/account#t2)
+2. Нажмите **Add user**
+3. Заполните необходимые данные, такие как username, password, phone и т.д.
+4. Отключите Access to Control Panel
+4. Разрешите **API connections** from *All addresses*
+5. Далее следуйте инструкции **Быстрый старт с UpCloud**
