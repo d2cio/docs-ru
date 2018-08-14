@@ -19,9 +19,9 @@
 :------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------
 `{{=service('serviceName').get('fieldName')}}`           | Возвращает переменную сервиса
 `{{=service('serviceName').getMainPort()}}`              | Возвращает основной порт
-`{{=service(serviceName).getAppAlias()}}`                | Возвращает alias контейнера [сервиса приложений](/getting-started/services/#_5)) и всех не реплицируемых сервисов (например, Redis или NGINX)
+`{{=service('serviceName').getAppAlias()}}`                | Возвращает alias контейнера [сервиса приложений](/getting-started/services/#_5)) и всех не реплицируемых сервисов (например, Redis или NGINX)
 `{{=service('serviceName').getMasterAlias()}}`           | Возвращает alias мастер-контейнера (для [сервисов хранения данных](/getting-started/services/#data-services))
-`{{=service(serviceName).getSlaveAlias()}}`              | Возвращает alias of слейв-контейнера (для [сервисов хранения](/getting-started/services/#_4))
+`{{=service('serviceName').getSlaveAlias()}}`              | Возвращает alias of слейв-контейнера (для [сервисов хранения](/getting-started/services/#_4))
 `{{=service('serviceName').getContainerName(num)}}`      | Возвращает имя контейнера сервиса с номером `num`
 `{{=service('serviceName').getEnv('environmentfield')}}` | Возвращает поле переменной сервиса
 `{{=service('serviceName').getNginxDomain()}}`           | Возвращает стандартный домен, который планируется использовать в NGINX
