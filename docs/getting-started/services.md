@@ -33,7 +33,7 @@ D2C запускает ваши сервисы/приложения внутри
 Название       | Масштабируемый | Поддерживаемые версии
 :------------- | :------------- | :--------------------------------
 **Node.js**    | Да             | 4, 6, 8, latest(9)
-**Python**     | Да             | 2.7, 3.5, 3.6
+**Python**     | Да             | 2.7, 3.5, 3.6, 3.7
 **Go**         | Да             | 1.7, 1.8, 1.9, 1.10
 **Ruby**       | Да             | 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5
 **PHP-FPM**    | Да             | 5.6, 7.0, 7.1, 7.2
@@ -43,11 +43,11 @@ D2C запускает ваши сервисы/приложения внутри
 
 Название                                     | Масштабируемый | Поддерживаемые версии  | Комментарий
 :------------------------------------------- | :------------- | :--------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------
-**NGINX**                                    | Нет            | 1.11, 1.12, 1.13, 1.14 | NGINX is an edge service for serving on top of stack. It can generate free [TSL certificates](/platform/domains-and-certificates/) (by Let's Encrypt).
-**NGINX-Cluster**                            | Да             | 1.11, 1.12, 1.13, 1.14 | NGINX-Cluster for cases when your application does not return static files or you need to serve more than one PHP-FPM container.
-**NGINX-Static**                             | Да             | 1.11, 1.12, 1.13, 1.14 | NGINX-Static returns static files (HTML, JS, CSS, images, etc.). It cannot serve other services.
-**HAProxy**                                  | Нет            | latest
-**Docker** (Services based on Docker Images) | Да
+**NGINX**                                    | Нет            | 1.11, 1.12, 1.13, 1.14, 1.15 | NGINX это edge сервис (веб-сервер), может обслуживать несколько сервисов, в том числе из разных проектов. Может генерировать бесплатные [TSL сертификаты](/platform/domains-and-certificates/) (by Let's Encrypt).
+**NGINX-Cluster**                            | Да             | 1.11, 1.12, 1.13, 1.14, 1.15 | NGINX-Cluster используется для случаев, когда требуется обслуживать более одного PHP-FPM контейнера. [Пример](https://263301.selcdn.ru/d2c-content/2017/10/2017-10-25_03h56_09.png).
+**NGINX-Static**                             | Да             | 1.11, 1.12, 1.13, 1.14, 1.15 | NGINX-Static Возвращает статические файлы (HTML, JS, CSS, images, etc.). It cannot serve other services.
+**HAProxy**                                  | Нет            | latest                       | HAProxy - [балансировщик](/platform/balancing/). Может выступать в роли edge сервиса и генерировать [TSL сертификаты](/platform/domains-and-certificates/)
+**Docker** (Сервисы основанные на Docker образах) | Да
 
 ## Действия
 
