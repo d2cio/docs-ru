@@ -6,7 +6,7 @@ site_dir: site
 
 repo_url: https://github.com/d2cio/docs/
 
-pages:
+nav:
 - Вступление: index.md
 - Тур по сервису: 'quick-tour/introduction.md'
 - Начало работы:
@@ -59,7 +59,7 @@ pages:
   - 'Миграция контейнеров': 'platform/migration.md'
 - Аккаунт:
   - 'Настройки': 'account/settings.md'
-  - 'Тарифы': 'account/plan.md'
+  - 'Тарифы и услуги': 'account/plan.md'
 
 theme: readthedocs
 
