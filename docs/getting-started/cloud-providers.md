@@ -7,19 +7,21 @@
 - **Amazon Web Services**
 - **DigitalOcean**
 - **Vultr**
-
-Скоро будут доступны:
-
-- UpCloud
-- Google Cloud Platform
+- **UpCloud**
+- **Google Cloud Platform**
 
 ## Amazon Web Services
+
+### Видео-инструкция
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/LT866IxJ5Qo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br>
 
 ### Быстрый старт с AWS
 
 1. Войдите в ваш [D2C аккаунт](https://panel.d2c.io/account/login)
 2. Нажмите **+ Создать сервер**
-3. Нажмите **Добавить провайдера** and choose **Amazon Web Services**
+3. Нажмите **Добавить провайдера** и выберите **Amazon Web Services**
 5. Вставьте ваши ключи доступа AWS (Access Key ID and Secret Access Key)
 
 ### Сгенерировать ключи доступа (AWS credentials)
@@ -62,7 +64,35 @@
 6. Кликните **Create policy**
 7. Теперь вы можете [сгенерировать ключи доступа AWS](/getting-started/cloud-providers/#generate-aws-credentials) с вашей собственной policy
 
+## Google Cloud Platform
+
+### Быстрый старт с GCP
+
+!!! note
+
+    Убедитесь, что для вашего GCP проекта включен API Compute Engine и подключен платежный аккаунт
+
+1. Войдите в ваш [D2C аккаунт](https://panel.d2c.io/account/login)
+2. Нажмите **+ Создать сервер**
+3. Нажмите **Добавить провайдера** и выберите **Google Cloud**
+4. Загрузите JSON файл вашего [Сервисного аккаунта](https://console.cloud.google.com/iam-admin/serviceaccounts) с ключами доступа
+
+### Сгенерировать GCP JSON файл
+
+Если у вас нет JSON файла с ключами доступа GCP, вы можете создать его через консоль GCP
+
+1. Создайте новый проект в [GCP](https://console.cloud.google.com), если требуется
+2. На странице GCP [APIs & Services](https://console.cloud.google.com/apis/dashboard) нажмите **ENABLE APIS AND SERVICES**, найдите **Compute Engine API** и нажмите **Enable**
+3. Далее, перейдите в [Credentials](https://console.cloud.google.com/apis/api/compute.googleapis.com/credentials) и выберите созданный сервисный аккаунт (вы будете перенаправлены на страницу [IAM & admin/Service accounts](https://console.cloud.google.com/iam-admin/serviceaccounts))
+4. На странице Service accounts создайте новый ключ для созданного сервисного аккаунта (Actions → ⋮ → Create key) в формате JSON
+5. Затем следуйте инструкции **Быстрый старт с GCP**
+
 ## DigitalOcean
+
+### Видео-инструкция
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/bCzGLQ6op0U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br>
 
 ### Быстрый старт с DigitalOcean
 
@@ -73,11 +103,16 @@
 
 ## Vultr
 
+### Видео-инструкция
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/5pQzCXkhNKM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br>
+
+### Быстрый старт с Vultr
+
 !!! note
 
     Для того, чтобы разрешить D2C управлять серверами Vultr необходимо добавить IP-адреса 52.58.244.78/32 и 52.57.161.208/32 в разделе Access Control
-
-### Быстрый старт с Vultr
 
 1. Войдите в ваш [D2C аккаунт](https://panel.d2c.io/account/login)
 2. Кликните **+ Создать сервер**
@@ -94,6 +129,11 @@
 4. Далее следуйте инструкции **Быстрый старт с Vultr**
 
 ## UpCloud
+
+### Видео-инструкция
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/adxjApELOu8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br>
 
 ### Быстрый старт с UpCloud
 

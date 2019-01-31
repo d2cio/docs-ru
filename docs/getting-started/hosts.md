@@ -8,7 +8,7 @@
 
 ## Поддерживаемые операционные системы и требования
 
-Когда вы создаете сервер мы устанавливаем на него **Ubuntu 16.04**.
+Когда вы создаете сервер мы устанавливаем на него **Ubuntu 18.04**.
 
 Когда вы **подключаете** свой сервер он должен соответствовать следующим требованиям:
 
@@ -26,6 +26,12 @@
 
 ## Как подключить свой сервер
 
+#### Видео-инструкция
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/CfX8kkZny2Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+#### Пошаговая инструкция
+
 1. Войдите в ваш [D2C аккаунт](https://panel.d2c.io/account/signup)
 2. Нажмите **Подключить свой сервер**
 3. Скопируйте команду
@@ -36,13 +42,10 @@
 ## Поддерживаемые хостинг провайдеры
 
 - Amazon Web Services ([инструкция по подключению AWS](/getting-started/cloud-providers/#amazon-web-services))
+- Google Cloud Platform ([инструкция по подключению GCP](/getting-started/cloud-providers/#google-cloud-platform))
 - DigitalOcean ([инструкция по подключению DigitalOcean](/getting-started/cloud-providers/#digital-ocean))
 - Vultr ([инструкция по подключению Vultr](/getting-started/cloud-providers/#vultr))
 - UpCloud ([инструкция по подключению UpCloud](/getting-started/cloud-providers/#upcloud))
-
-Скоро будут доступны:
-
-- Google Cloud Platform
 
 ## ПО, которое устанавливается на сервер
 
@@ -63,17 +66,31 @@
 
 ## AWS EBS
 
-Амазон EC2 предоставляет дополнительно место  на диске которое называется [Amazon Elastic Block Storage](https://aws.amazon.com/ebs/?nc1=h_ls) (EBS). Вы можете изменять размер EBS без остановки серверов.
+Амазон EC2 предоставляет дополнительно место для инстансов, которое называется [Amazon Elastic Block Storage](https://aws.amazon.com/ebs/?nc1=h_ls) (EBS). Вы можете изменять размер EBS без остановки серверов с помощью интерфейса D2C.
 
 ![EBS](../img/scaling_ebs.png)
 
+## GCP Zonal Persistent SSD disks
+
+Google Compute Engine предоставляет дополнительно место для инстансов, которое называется [Zonal Persistent SSD disks](https://cloud.google.com/compute/docs/disks/#pdspecs). Вы можете добавлять дополнительное хранилище для вашего сервера с помощью интерфейса D2C.
+
+![EBS](../img/gcp_volumes_resize.png)
+
+## DigitalOcean Block Storage
+
+DigitalOcean provides предоставляет дополнительно место для инстансов, которое называется [Block Storage volumes](https://www.digitalocean.com/docs/volumes/). Вы можете добавлять дополнительное хранилище для вашего сервера с помощью интерфейса D2C.
+
+![EBS](../img/do_block_storage.png)
+
 ## Демонстрационные сервера
 
-Вы можете создать демонстрационный сервер для тестирования платформы.
-Конфигурация сервера: t2.micro (1 GB, 1 x 2.4 GHz, 4GB SSD).
-Регион: N. Virginia, The United States
+Вы можете создать демонстрационные сервера для тестирования платформы.
+Конфигурация серверов: 2GB RAM, 1vCPU, 50GB SSD.
+Регион: N. Amsterdam, Netherlands
 
-Демонстрационный сервер создается на один час и будет удален после истечения этого времени со всеми сервисами и контейнерами. После этого вы сможете добавить новый на такой же срок.
+Демонстрационные сервера создается на три часа и будут удалены после истечения этого времени со всеми сервисами и контейнерами. После этого вы сможете добавить новые на такой же срок.
+
+Вы можете найти кнопку **+ Free demo host** на главной странице вашего акканта (dashboard).
 
 ## Логи
 
