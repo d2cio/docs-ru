@@ -66,6 +66,11 @@
 
 ## Google Cloud Platform
 
+### Видео-инструкция
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/WhbvLZLGUiE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br>
+
 ### Быстрый старт с GCP
 
 !!! note
